@@ -2,10 +2,16 @@
 //
 
 #include "stdafx.h"
+#include<cstdio>
+
+using namespace std;
 
 
 int main()
 {
+	printf("hello World");
+	getchar();
+
     return 0;
 }
 

@@ -2,16 +2,21 @@
 #include <iostream>
 
 
-TextBox::TextBox(int width) {
-	std::cout << "TextBox constractor/n";
-	width = width;
-	std::cout << "width="<<width<<"/n";
+TextBox::TextBox(int width):Control(width) {
+	//width = width;
 };
-
-string TextBox::GetText() {
-	return"";
-}
 
 void TextBox::SetText(string value) {
 	value = value;
+	Graphics g = Graphics();
+	g.write(value);
+}
+void TextBox::setBackGround(Color color) {
+	Graphics g = Graphics();
+	g.setBackground(color);
+	
+}
+
+void TextBox::draw(Graphics& g, int x, int y, size_t z) {
+	cout << "drow in TExtBox";
 }

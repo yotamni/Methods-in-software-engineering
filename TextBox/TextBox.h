@@ -4,10 +4,12 @@ using namespace std;
 
 class TextBox:public Control{
 
-	int width;
-	int value;
+	string value;
+
 public:
 	TextBox(int);
 	void SetText(string);
-	string GetText();
+	string GetText() { return value; }
+	void setBackGround(Color);
+	void draw(Graphics&, int, int, size_t);
 };

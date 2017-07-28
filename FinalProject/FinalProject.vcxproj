@@ -151,6 +151,9 @@
     <ProjectReference Include="..\Label\Label.vcxproj">
       <Project>{834f9985-23ac-4a94-ba51-d655dbf3ba37}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\TextBox\TextBox.vcxproj">
+      <Project>{ca99bbb1-5d99-4bfe-9114-b7b159c8eb86}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

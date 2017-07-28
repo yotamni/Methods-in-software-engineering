@@ -1,17 +1,19 @@
 #pragma once
 #include "Graphics.h"
 #include <vector>
-
+#include <iostream>
 using namespace std;
 
 class Control
 {
+	int width;
 
 protected:
 	short left;
 	short top;
 	
 public:
+	Control(int width) { width = width; std::cout << width; };
 	Control();
 	static Control* getFocus() { return NULL; };
 	static void setFocus(Control& control) {};

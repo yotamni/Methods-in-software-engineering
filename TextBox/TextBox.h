@@ -1,13 +1,13 @@
 #include <string.h>
-
+#include "../Common/Control.h"
 using namespace std;
 
-class TextBox {
+class TextBox:public Control{
 
 	int width;
-	string value;
+	int value;
 public:
 	TextBox(int);
-	void setText(string);
+	void SetText(string);
 	string GetText();
 };

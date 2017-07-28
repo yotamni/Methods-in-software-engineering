@@ -1,5 +1,6 @@
-#include "TExtBox.h"
+#include "TextBox.h"
 #include <iostream>
+
 
 TextBox::TextBox(int width) {
 	std::cout << "TextBox constractor/n";
@@ -8,9 +9,9 @@ TextBox::TextBox(int width) {
 };
 
 string TextBox::GetText() {
-
+	return"";
 }
 
-void SetText(string value) {
+void TextBox::SetText(string value) {
 	value = value;
 }

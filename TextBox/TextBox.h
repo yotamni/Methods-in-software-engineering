@@ -1,15 +1,23 @@
-#include <string.h>
-#include "../Common/Control.h"
+#pragma once
+#include "../Common/IComponent.h"
 using namespace std;
 
-class TextBox:public Control{
-
+class TextBox:public IComponent{
+protected:
 	string value;
-
+	int curser;
+	int width;
+	int hight;
 public:
-	TextBox(int);
+	TextBox(int width, int hight);
 	void SetText(string);
 	string GetText() { return value; }
-	void setBackGround(Color);
+	void setBackgroundColor(Color);
 	void draw(Graphics&, int, int, size_t);
+	void draw(Graphics&);
+	void setvisibility(bool visibility);
+	void setForeground(Color color);
+	void setBorder(BorderType border);
+	int getWidth();
+	int getHight();
 };

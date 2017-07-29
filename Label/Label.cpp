@@ -1,7 +1,3 @@
 #include "Label.h"
-#include <iostream>
 
-Label::Label(int width) {
-	width = width;
-
-};
+Label::Label(int width, int hight):TextBox(width, hight) {};

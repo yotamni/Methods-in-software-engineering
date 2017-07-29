@@ -36,7 +36,7 @@ void Graphics::setForeground(Color color)
 	updateConsoleAttributes();
 }
 
-void Graphics::write(string s)
+void Graphics::write(string s)	//write string from current curser position
 {
 	WriteConsoleA(_console, s.c_str(), s.size(), nullptr, nullptr);
 }

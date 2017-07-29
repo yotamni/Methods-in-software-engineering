@@ -1,14 +1,12 @@
 #pragma once
-#include <string.h>
+#include "../TextBox/TextBox.h"
 
 using namespace std;
 
-class Label {
+class Label: public TextBox {
 
-	int width;
-	int value;
 public:
-	Label(int);
+	Label(int, int);
 	//	void SetText(string);
 	//	string GetText();
 };

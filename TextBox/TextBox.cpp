@@ -20,6 +20,42 @@ void TextBox::setBackgroundColor(Color color) {
 void TextBox::draw(Graphics& g, int start_x, int start_y, size_t z) {
 
 }
+//void TextBox::draw(Graphics& g, int start_x, int start_y) {
+//	//first button
+//	short len_x = width;
+//	short len_y = hight;
+//	printf("%c", '\xDA');
+//	short i;
+//	for (i = 0; i < len_x; i++) {
+//		printf("%c", '\xC4');
+//	}
+//	printf("%c", '\xBF');
+//	for (i = 1; i < len_y; i++) {
+//		g.moveTo(start_x, (start_y + i));
+//	//	c = { start_x, start_y + i };
+//	//	SetConsoleCursorPosition(h, c);
+//		printf("%c", '\xB3');
+//		g.moveTo((start_x + len_x + 1), (start_y + i));
+//	//	c = { start_x + len_x + 1, start_y + i };
+//	//	SetConsoleCursorPosition(h, c);
+//		printf("%c", '\xB3');
+//	}
+//	g.moveTo(start_x, (start_y + i));
+////	c = { start_x, start_y + i };
+////	SetConsoleCursorPosition(h, c);
+//	printf("%c", '\xc0');
+//	for (short i = 0; i < len_x; i++) {
+//		printf("%c", '\xC4');
+//	}
+//	printf("%c", '\xd9');
+//	//end first button
+//	/*SetConsoleTextAttribute(h, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+//
+//	c = { start_x + 1,start_y + 1 };
+//	SetConsoleCursorPosition(h, c);
+//	printf("click me");*/
+//
+//}
 
 void TextBox::draw(Graphics& g)
 {

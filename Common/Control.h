@@ -20,6 +20,7 @@ public:
 	static void setFocus(Control& control) {};
 
 	virtual void draw(Graphics& g, int x, int y, size_t z) {};
+//	virtual void draw(Graphics & g, int start_x, int start_y);
 	virtual void draw(Graphics&) {};
 	virtual void mousePressed(int x, int y, bool isLeft) {};
 	virtual void keyDown(int keyCode, char charecter) {};

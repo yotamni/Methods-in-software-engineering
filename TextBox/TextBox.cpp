@@ -69,13 +69,18 @@ void TextBox::draw(Graphics& g)
 	for (short i = 1; i < hight; i++) {
 		g.moveTo(this->getLeft(), (this->getTop() + i));
 		printf("%c", '\xB3');
+		g.moveTo(this->getLeft()+ width + 1, (this->getTop() + i));
+		printf("%c", '\xB3');
 	}
+	g.moveTo(this->getLeft(), (this->getTop() + hight));
 	printf("%c", '\xC0');
-	for (short i = 1; i < width; i++) {
-		g.moveTo((this->getLeft()+i), this->getTop());
+	g.moveTo(this->getLeft() + 1 , this->getTop() + hight);
+	for (short i = 1; i < width + 1; i++) {
 		printf("%c", '\xC4');
 	}
-	
+	printf("%c", '\xd9');
+	g.moveTo(this->getTop() + 1,this->getLeft()+1 );
+	printf("%s", "test");
 	//	coord = { 7, 12 };
 	//	SetConsoleCursorPosition(outHandle, coord);
 	//printf("%c", '\xc0');

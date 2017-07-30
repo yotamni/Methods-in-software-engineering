@@ -6,10 +6,9 @@ class TextBox:public IComponent{
 protected:
 	string value;
 	int curser;
-	int width;
-	int hight;
+
 public:
-	TextBox(int width, int hight);
+	TextBox(int, int , BorderType);
 	void SetText(string);
 	string GetText() { return value; }
 	void setBackgroundColor(Color);
@@ -19,6 +18,4 @@ public:
 	void setvisibility(bool visibility);
 	void setForeground(Color color);
 	void setBorder(BorderType border);
-	int getWidth();
-	int getHight();
 };

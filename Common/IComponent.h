@@ -2,12 +2,18 @@
 #include "Control.h"
 class IComponent :public Control
 {
+	int width;
+	int hight;
+	bool visibility;
+	Color background, foreground;
 public:
 	IComponent();
+	IComponent(int width, int hight, BorderType border);
 	virtual ~IComponent();
-	virtual void setvisibility(bool visibility) = 0;
-	virtual void setForeground(Color color) = 0;
-	virtual void setBackgroundColor(Color color) = 0;
-	virtual void setBorder(BorderType border) = 0;
+	virtual void setvisibility(bool visibility);
+	virtual void setForeground(Color color);
+	virtual void setBackgroundColor(Color color);
+	virtual void setBorder(BorderType border) ;
+	void printBorder(Graphics&);
 };
 

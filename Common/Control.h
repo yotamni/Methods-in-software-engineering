@@ -13,8 +13,10 @@ protected:
 	short left;
 	short top;
 	bool focus;
+	BorderType borderStyle;
 public:
 	Control(int width) { width = width; std::cout << width; };
+	Control(short top, short left, BorderType border);
 	Control();
 	static Control* getFocus() { return NULL; };
 	static void setFocus(Control& control) {};

@@ -10,7 +10,7 @@ void main()
 
 	int i;
 
-	TextBox tb(10, 5);
+	TextBox tb(10, 5, BorderType::DoubleLineBorder);
 
 	EventEngine engine;
 	cout << "hii" << endl;

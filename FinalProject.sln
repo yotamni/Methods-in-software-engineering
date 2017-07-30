@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FinalProject", "FinalProject\FinalProject.vcxproj", "{B98F0C1B-F08E-4A0F-8D19-AA7B076860BA}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Label", "Label\Label.vcxproj", "{834F9985-23AC-4A94-BA51-D655DBF3BA37}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Panel", "Panel\Panel.vcxproj", "{43613832-BFD9-4D5C-8532-DA7E5940A115}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumericBox", "NumericBox\NumericBox.vcxproj", "{903E1049-9CD2-4DA2-86FE-1491C46D1E63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,14 @@ Global
 		{43613832-BFD9-4D5C-8532-DA7E5940A115}.Release|x64.Build.0 = Release|x64
 		{43613832-BFD9-4D5C-8532-DA7E5940A115}.Release|x86.ActiveCfg = Release|Win32
 		{43613832-BFD9-4D5C-8532-DA7E5940A115}.Release|x86.Build.0 = Release|Win32
+		{903E1049-9CD2-4DA2-86FE-1491C46D1E63}.Debug|x64.ActiveCfg = Debug|x64
+		{903E1049-9CD2-4DA2-86FE-1491C46D1E63}.Debug|x64.Build.0 = Debug|x64
+		{903E1049-9CD2-4DA2-86FE-1491C46D1E63}.Debug|x86.ActiveCfg = Debug|Win32
+		{903E1049-9CD2-4DA2-86FE-1491C46D1E63}.Debug|x86.Build.0 = Debug|Win32
+		{903E1049-9CD2-4DA2-86FE-1491C46D1E63}.Release|x64.ActiveCfg = Release|x64
+		{903E1049-9CD2-4DA2-86FE-1491C46D1E63}.Release|x64.Build.0 = Release|x64
+		{903E1049-9CD2-4DA2-86FE-1491C46D1E63}.Release|x86.ActiveCfg = Release|Win32
+		{903E1049-9CD2-4DA2-86FE-1491C46D1E63}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

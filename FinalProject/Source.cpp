@@ -12,7 +12,7 @@ void main()
 	int i;
 	Panel form;
 	
-	TextBox tb(10, 5, BorderType::DoubleLineBorder);
+	TextBox tb(20, 2, BorderType::DoubleLineBorder);
 	form.addCompon(&tb);
 	EventEngine engine;
 	Control::setFocus(tb);

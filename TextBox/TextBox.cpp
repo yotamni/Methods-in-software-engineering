@@ -26,9 +26,11 @@ void TextBox::draw(Graphics& g)
 {
 	printBorder(g);
 	g.moveTo(this->getTop() + 1,this->getLeft()+1 );
-	printf("%s", value);
+	cout<< this->GetText();
+	g.setCursorVisibility(true);
 }
 void TextBox::keyDown(int keyCode, char charecter) {
+	cursor = this->getLeft() + value.size();
 	if (cursor >= 0 && cursor <= getWidth()) {
 		if (charecter >= VK_SPACE && charecter <= '~' && value.size() < getWidth() - 1) {
 			string str = string(1, charecter);

@@ -5,7 +5,7 @@ using namespace std;
 class TextBox:public IComponent{
 protected:
 	string value;
-	int curser;
+	size_t cursor;
 
 public:
 	TextBox(int, int , BorderType);
@@ -15,7 +15,5 @@ public:
 	void draw(Graphics&, int, int, size_t);
 	void draw(Graphics & g, int start_x, int start_y);
 	void draw(Graphics&);
-	void setvisibility(bool visibility);
-	void setForeground(Color color);
-	void setBorder(BorderType border);
+	void keyDown(int, char);
 };

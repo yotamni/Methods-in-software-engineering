@@ -10,7 +10,8 @@ void IComponent::setBorder(BorderType border){borderStyle = border;}
 void IComponent::setvisibility(bool visibility) { visibility = visibility; }
 void IComponent::setBackgroundColor(Color color) { background = color; }
 void IComponent::setForeground(Color color) { foreground = color; }
-
+int IComponent::getHight(){return hight;}
+int IComponent::getWidth() { return width; }
 void IComponent::printBorder(Graphics& g)
 {
 	char leftTop, topAndBottom, leftAndRight, leftBottom, rightTop, rightBottom;
@@ -37,6 +38,8 @@ void IComponent::printBorder(Graphics& g)
 	}
 	case BorderType::NoneType:
 		break;
+	default:
+		cout << "No BorderType" << endl;
 	}
 	if(borderStyle!=BorderType::NoneType){
 		g.moveTo(this->getLeft(), this->getTop());

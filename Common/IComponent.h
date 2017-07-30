@@ -15,5 +15,7 @@ public:
 	virtual void setBackgroundColor(Color color);
 	virtual void setBorder(BorderType border) ;
 	void printBorder(Graphics&);
+	int getWidth();
+	int getHight();
 };
 

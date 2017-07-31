@@ -25,7 +25,7 @@ void TextBox::draw(Graphics& g, int start_x, int start_y, size_t z) {
 void TextBox::draw(Graphics& g)
 {
 	printBorder(g);
-	g.moveTo(1,10 );
+	g.moveTo(left+1,top+1);
 	cout<< this->GetText();
 	g.setCursorVisibility(true);
 }

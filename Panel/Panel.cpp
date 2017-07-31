@@ -22,8 +22,8 @@ void Panel::keyDown(int keyCode, char charecter) {
 void Panel::mousePressed(const int x, const int y, const bool isLeft) {
 	if (isLeft) {
 		for (auto children = container.begin(); children != this->container.end(); ++children) {
-			int X = x - (*children)->getLeft();
 			int Y = y - (*children)->getTop();
+			int X = x - (*children)->getLeft();
 			if (X >= 0 && Y >= 0 && X < (*children)->getWidth() && Y < (*children)->getHight()) 
 			{
 				if ((*children)->canGetFocus()) setFocus(**children);

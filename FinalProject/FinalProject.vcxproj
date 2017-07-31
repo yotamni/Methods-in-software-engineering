@@ -151,6 +151,9 @@
     <ProjectReference Include="..\Label\Label.vcxproj">
       <Project>{834f9985-23ac-4a94-ba51-d655dbf3ba37}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\NumericBox\NumericBox.vcxproj">
+      <Project>{903e1049-9cd2-4da2-86fe-1491c46d1e63}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\Panel\Panel.vcxproj">
       <Project>{43613832-bfd9-4d5c-8532-da7e5940a115}</Project>
     </ProjectReference>

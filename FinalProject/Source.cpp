@@ -12,15 +12,17 @@ void main()
 
 	int i;
 	Panel form;
-	
-	TextBox tb(20, 2, BorderType::DoubleLineBorder);
-	NumericBox nb(5, 0, 50);
-	nb.setValue(0);
-	form.addCompon(&tb);
-	form.addCompon(&nb);
+	TextBox tb(20, 2, BorderType::SingleBorder);
+	Label label(20, 2);
+	label.SetText("name:");
+	//TextBox tb1(20, 2, BorderType::DoubleLineBorder);
+	//NumericBox nb(5, 0, 50);
+	//nb.setValue(0);
+	form.addCompon(&label, 1, 1);
+	form.addCompon(&tb, 1, 10);
+	//form.addCompon(&tb1);
 	EventEngine engine;
-	Control::setFocus(nb);
-	cout << "hii" << endl;
-	engine.run(nb);
+	Control::setFocus(tb);
+	engine.run(form);
 	cin >> i;
 }

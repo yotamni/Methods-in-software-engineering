@@ -7,6 +7,7 @@ private:
 public:
 	IComposite();
 	virtual ~IComposite();
+	void addCompon(Control* toAdd, short top, short left);
 	void addCompon(Control*);
 	void removeCompon(Control*);
 	void drawAll(Graphics&);

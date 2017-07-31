@@ -4,7 +4,8 @@
 
 TextBox::TextBox(int width, int hight, BorderType border):IComponent(width,hight,border) {
 	cout << "C'tor TextBox" << endl;
-	value = "";
+	this->value = "";
+	cursor = this->getLeft();
 };
 
 void TextBox::SetText(string value) {
@@ -14,8 +15,7 @@ void TextBox::SetText(string value) {
 }
 void TextBox::setBackgroundColor(Color color) {
 	Graphics g = Graphics();
-	g.setBackground(color);
-	
+	g.setBackground(color);	
 }
 
 void TextBox::draw(Graphics& g, int start_x, int start_y, size_t z) {
@@ -31,10 +31,11 @@ void TextBox::draw(Graphics& g)
 }
 
 void TextBox::mousePressed(int x, int y, bool isLeft) {
-
+	if (x <= value.size()) cursor = x;
+	else cursor = value.size();
 }
 void TextBox::keyDown(int keyCode, char charecter) {
-	cursor = this->getLeft() + value.size();
+	//cursor = this->getLeft() + value.size();
 	if (cursor >= 0 && cursor <= getWidth()) {
 		if (charecter >= VK_SPACE && charecter <= '~' && value.size() < getWidth() - 1) {
 			string str = string(1, charecter);

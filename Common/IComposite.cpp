@@ -8,6 +8,13 @@ IComposite::~IComposite()
 {
 }
 
+void IComposite::addCompon(Control* toAdd,short top, short left) {
+	toAdd->setTop(top);
+	toAdd->setLeft(left);
+	container.push_back(toAdd);
+}
+
+
 void IComposite::addCompon(Control* toAdd)
 {
 	container.push_back(toAdd);

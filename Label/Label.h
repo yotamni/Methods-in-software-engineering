@@ -7,6 +7,7 @@ class Label: public TextBox {
 
 public:
 	Label(int, int);
-	//	void SetText(string);
-	//	string GetText();
+	void SetText(string);
+	void draw(Graphics& graphics);
+	string GetText();
 };

@@ -2,8 +2,8 @@
 #include "Control.h"
 class IComponent :public Control
 {
-	int width;
-	int hight;
+	
+	
 	bool visibility;
 	Color background, foreground;
 public:

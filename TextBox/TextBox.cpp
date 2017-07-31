@@ -9,7 +9,7 @@ TextBox::TextBox(int width, int hight, BorderType border):IComponent(width,hight
 };
 
 void TextBox::SetText(string value) {
-	value = value;
+	this->value = value;
 	Graphics g = Graphics();
 	g.write(value);
 }
@@ -25,7 +25,7 @@ void TextBox::draw(Graphics& g, int start_x, int start_y, size_t z) {
 void TextBox::draw(Graphics& g)
 {
 	printBorder(g);
-	g.moveTo(this->getTop() + 1,this->getLeft()+1 );
+	g.moveTo(1,10 );
 	cout<< this->GetText();
 	g.setCursorVisibility(true);
 }

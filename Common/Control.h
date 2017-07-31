@@ -10,6 +10,8 @@ enum class BorderType{SingleBorder, DoubleLineBorder, NoneType};
 class Control
 {
 protected:
+	int hight;
+	int width;
 	short left;
 	short top;
 	bool canFocus;
@@ -18,10 +20,12 @@ protected:
 public:
 	Control(int width) { width = width; std::cout << width; };
 	Control(short top, short left, BorderType border);
+	Control(int hight,int width,short top, short left, BorderType border);
 	Control();
 	static Control* getFocus() { return onFocus; };
 	static void setFocus(Control& control);
-
+	int getHight() { return hight; }
+	int getWidth() { return width; }
 	virtual void draw(Graphics& g, int x, int y, size_t z) {};
 //	virtual void draw(Graphics & g, int start_x, int start_y);
 	virtual void draw(Graphics&) {};

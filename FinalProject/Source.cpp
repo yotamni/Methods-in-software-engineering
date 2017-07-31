@@ -20,6 +20,8 @@ void main()
 	//nb.setValue(0);
 	form.addCompon(&label, 1, 1);
 	form.addCompon(&tb, 1, 10);
+
+
 	//form.addCompon(&tb1);
 	EventEngine engine;
 	Control::setFocus(tb);

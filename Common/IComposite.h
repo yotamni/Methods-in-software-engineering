@@ -2,7 +2,7 @@
 #include "IComponent.h"
 class IComposite :public IComponent
 {
-private:
+protected:
 	vector<Control*> container;
 public:
 	IComposite();

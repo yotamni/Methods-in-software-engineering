@@ -10,4 +10,5 @@ public:
 	void SetText(string);
 	void draw(Graphics& graphics);
 	string GetText();
+	void mousePressed(int x, int y, bool isLeft) {};
 };

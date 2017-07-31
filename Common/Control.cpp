@@ -25,7 +25,10 @@ void Control::setLeft(short newLeft)
 {
 	this->left = newLeft;
 }
-
+void Control::getAllControls(vector<Control*>* controls) {
+	if (canGetFocus())
+		controls->push_back(this);
+}
 void Control::setTop(short newTop)
 {
 	this->top = newTop;

@@ -35,7 +35,7 @@ public:
 	virtual short getTop() { return top; };
 	virtual void setLeft(short);
 	virtual void setTop(short);
-	virtual void getAllControls(vector<Control*>* controls) {};
+	virtual void getAllControls(vector<Control*>* controls);
 	virtual bool canGetFocus() { return canFocus; };
 	~Control();
 };

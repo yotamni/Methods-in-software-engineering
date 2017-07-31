@@ -18,6 +18,11 @@ void Panel::draw(Graphics& g)
 void Panel::keyDown(int keyCode, char charecter) {
 
 }
+void Panel::getAllControls(vector<Control*>* controls) {
+	for (auto it = container.begin(); it != container.end(); ++it) {
+		(*it)->getAllControls(controls);
+	}
+}
 
 void Panel::mousePressed(const int x, const int y, const bool isLeft) {
 	if (isLeft) {

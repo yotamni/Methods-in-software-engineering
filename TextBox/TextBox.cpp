@@ -29,6 +29,10 @@ void TextBox::draw(Graphics& g)
 	cout<< this->GetText();
 	g.setCursorVisibility(true);
 }
+
+void TextBox::mousePressed(int x, int y, bool isLeft) {
+
+}
 void TextBox::keyDown(int keyCode, char charecter) {
 	cursor = this->getLeft() + value.size();
 	if (cursor >= 0 && cursor <= getWidth()) {

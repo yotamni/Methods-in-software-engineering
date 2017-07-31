@@ -27,4 +27,5 @@ public:
 	void setWidth(int width) { this->width = width; }
 	void setMin(int min) { this->min = min; }
 	void setMax(int max) { this->max = max; }
+
 };

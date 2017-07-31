@@ -2,7 +2,6 @@
 #include <iostream>
 #include <ctime>
 
-
 void NumericBox::draw(Graphics& g)
 {
 	printBorder(g);

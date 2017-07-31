@@ -1,9 +1,7 @@
 #pragma once
 #include "Control.h"
 class IComponent :public Control
-{
-	
-	
+{	
 	bool visibility;
 	Color background, foreground;
 public:

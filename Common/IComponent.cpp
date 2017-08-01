@@ -1,8 +1,8 @@
 #include "IComponent.h"
 
-IComponent::IComponent(){}
+IComponent::IComponent(): Control(1,1,0,0,BorderType::NoneType), visibility(true), foreground(Color::White), background(Color::Black){}
 
-IComponent::IComponent(int width, int hight, BorderType border) : Control(hight, width,0, 0, border), visibility(true){}
+IComponent::IComponent(int width, int hight, BorderType border, int top, int left): Control(hight, width, top, left, border), visibility(true), foreground(Color::White), background(Color::Black){}
 
 IComponent::~IComponent(){}
 

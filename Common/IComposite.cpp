@@ -1,22 +1,12 @@
 #include "IComposite.h"
 
-IComposite::IComposite()
-{
-	cout << "nlalal" << endl;
-}
-IComposite::~IComposite()
-{
-}
+IComposite::IComposite(): IComponent(){}
+IComposite::IComposite(int hight, int width, int top, int left, BorderType border=BorderType::NoneType): IComponent(width, hight, border, top, left){}
+IComposite::~IComposite(){}
 
 void IComposite::addCompon(Control* toAdd,short top, short left) {
 	toAdd->setTop(top);
 	toAdd->setLeft(left);
-	container.push_back(toAdd);
-}
-
-
-void IComposite::addCompon(Control* toAdd)
-{
 	container.push_back(toAdd);
 }
 

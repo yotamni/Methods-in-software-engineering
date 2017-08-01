@@ -6,11 +6,11 @@ protected:
 	vector<Control*> container;
 public:
 	IComposite();
+	IComposite(int hight, int width, int top, int left, BorderType border);
 	virtual ~IComposite();
-	void addCompon(Control* toAdd, short top, short left);
-	void addCompon(Control*);
+	virtual void addCompon(Control* toAdd, short top, short left);
+//	virtual void addCompon(Control*);
 	void removeCompon(Control*);
 	void drawAll(Graphics&);
-	
 };
 

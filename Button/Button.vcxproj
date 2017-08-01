@@ -19,9 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{903E1049-9CD2-4DA2-86FE-1491C46D1E63}</ProjectGuid>
-    <RootNamespace>NumericBox</RootNamespace>
+    <ProjectGuid>{ABC422D0-63CF-4E19-AC47-2E650F4E7253}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Button</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -44,7 +45,7 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -110,21 +111,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="NumericBox.h" />
+    <ClInclude Include="Button.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NumericBox.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\Common.vcxproj">
-      <Project>{2d460596-459d-4e55-a35e-a392971604be}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Label\Label.vcxproj">
-      <Project>{834f9985-23ac-4a94-ba51-d655dbf3ba37}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Project1\Project1.vcxproj">
-      <Project>{abc422d0-63cf-4e19-ac47-2e650f4e7253}</Project>
-    </ProjectReference>
+    <ClCompile Include="Button.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 #include "../TextBox/TextBox.h"
 
 using namespace std;

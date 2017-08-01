@@ -15,7 +15,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Panel", "Panel\Panel.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumericBox", "NumericBox\NumericBox.vcxproj", "{903E1049-9CD2-4DA2-86FE-1491C46D1E63}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Button", "Project1\Project1.vcxproj", "{ABC422D0-63CF-4E19-AC47-2E650F4E7253}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Button", "Button\Button.vcxproj", "{ABC422D0-63CF-4E19-AC47-2E650F4E7253}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

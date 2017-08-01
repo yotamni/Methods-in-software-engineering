@@ -10,5 +10,5 @@ public:
 	void SetText(string);
 	void draw(Graphics& graphics);
 	string GetText();
-	void mousePressed(int x, int y, bool isLeft) {};
+	void mousePressed(const int x, const int y, const bool isLeft) {};
 };

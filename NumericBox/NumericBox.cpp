@@ -4,10 +4,18 @@
 
 void NumericBox::draw(Graphics& g)
 {
+	setBackgroundColor(Color::Red);
 	printBorder(g);
-	g.moveTo(this->getTop() + 1, this->getLeft() + 1);
-//	cout << value;
-
+	up.setTop(this->getTop() + 2);
+	up.setLeft(this->getLeft() + 2);
+	up.draw(g);
+	down.setTop(this->getTop() + 2);
+	down.setLeft(this->getLeft() + 5);
+	down.draw(g);
+	text.setTop(this->getTop() + 2);
+	text.setLeft(this->getLeft() + 7);
+	text.setForeground(Color::Orange);
+	text.draw(g);
 }
 NumericBox::NumericBox(int width=20, int hight=2, int top=0, int left=0, int _min=0, int _max=100, int val=0): IComposite(hight, width, top, left, BorderType::SingleBorder), up(5,5), down(5,5), text(5,5), _min(_min), _max(_max)
 {

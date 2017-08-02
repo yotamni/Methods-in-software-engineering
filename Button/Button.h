@@ -13,5 +13,8 @@ public:
 	Button(int, int);
 	~Button();
 	void addListener(MouseListener &listener);
+	//void draw(Graphics&);
+	//void mousePressed(const int x, const int y, const bool isLeft);
+	//void keyDown(int keyCode, char charecter);
 };
 

@@ -12,5 +12,6 @@ public:
 //	virtual void addCompon(Control*);
 	void removeCompon(Control*);
 	void drawAll(Graphics&);
+	void setFocusColor(Graphics&,Color color);
 };
 

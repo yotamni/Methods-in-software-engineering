@@ -1,6 +1,8 @@
 #include "CheckList.h"
-#include "../Panel/Panel.h"
 
-class CheckList :public Panel {
-
+CheckList::CheckList(int width, int hight, static vector<string>& choice):Panel(width,hight), options(choice) {
 };
+CheckList::~CheckList() {
+	
+};
+

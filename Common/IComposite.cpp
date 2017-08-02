@@ -20,14 +20,31 @@ void IComposite::removeCompon(Control * toRemove)
 
 void IComposite::drawAll(Graphics& g)
 {
+	auto onfocus = Control::getFocus();
 	Control* tmp;
 	size_t componSize = container.size();
 	for (int i = 0; i < componSize; i++) {
-		tmp = container[i];
+		tmp = container[i];	
+		//******************** Yotam 02/08
+		if (tmp == onfocus) {
+			setFocusColor(g, Color::Green);
+		}
+		else {
+			setFocusColor(g, Color::White);
+		}
+		//****************************//
 		tmp->draw(g);
+		
 	}
-	//Yotam 02/08
+	
+	//************************ Yotam 02/08
+	setFocusColor(g, Color::White);
 	auto textbox = dynamic_cast<TextBox*>(getFocus());
 	if (textbox) g.moveTo(textbox->getLeft() + textbox->getCursor() + 1, textbox->getTop() + 1);
 	g.setCursorVisibility(true);
+	//******************************//
+}
+
+void IComposite::setFocusColor(Graphics& g, Color color) {
+	g.setForeground(color);
 }

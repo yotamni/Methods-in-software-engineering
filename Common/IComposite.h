@@ -13,3 +13,4 @@ public:
 	void removeCompon(Control*);
 	void drawAll(Graphics&);
 };
+

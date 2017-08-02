@@ -145,9 +145,6 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Button\Button.vcxproj">
-      <Project>{abc422d0-63cf-4e19-ac47-2e650f4e7253}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\Common\Common.vcxproj">
       <Project>{2d460596-459d-4e55-a35e-a392971604be}</Project>
     </ProjectReference>

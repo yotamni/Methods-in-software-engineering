@@ -40,3 +40,4 @@ public:
 	virtual bool canGetFocus() { return canFocus; };
 	~Control();
 };
+

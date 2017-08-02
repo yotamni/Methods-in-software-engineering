@@ -12,6 +12,7 @@ public:
 	void SetText(string);
 	string GetText() { return value; }
 	void setBackgroundColor(Color);
+	size_t getCursor() { return cursor; };
 	void draw(Graphics&, int, int, size_t);
 	void draw(Graphics & g, int start_x, int start_y);
 	void mousePressed(const int x, const int y, const bool isLeft);

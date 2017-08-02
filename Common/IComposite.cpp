@@ -1,4 +1,5 @@
 #include "IComposite.h"
+#include "../TextBox/TextBox.h";
 
 IComposite::IComposite(): IComponent(){}
 IComposite::IComposite(int hight, int width, int top, int left, BorderType border=BorderType::NoneType): IComponent(width, hight, border, top, left){}
@@ -25,4 +26,8 @@ void IComposite::drawAll(Graphics& g)
 		tmp = container[i];
 		tmp->draw(g);
 	}
+	//Yotam 02/08
+	auto textbox = dynamic_cast<TextBox*>(getFocus());
+	if (textbox) g.moveTo(textbox->getLeft() + textbox->getCursor() + 1, textbox->getTop() + 1);
+	g.setCursorVisibility(true);
 }

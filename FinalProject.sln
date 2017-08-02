@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FinalProject", "FinalProject\FinalProject.vcxproj", "{B98F0C1B-F08E-4A0F-8D19-AA7B076860BA}"
 EndProject
@@ -16,8 +16,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumericBox", "NumericBox\NumericBox.vcxproj", "{903E1049-9CD2-4DA2-86FE-1491C46D1E63}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Button", "Button\Button.vcxproj", "{ABC422D0-63CF-4E19-AC47-2E650F4E7253}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CheckList", "CheckList\CheckList.vcxproj", "{87605C0E-5C07-49D9-B8CC-FD85804913F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,14 +81,6 @@ Global
 		{ABC422D0-63CF-4E19-AC47-2E650F4E7253}.Release|x64.Build.0 = Release|x64
 		{ABC422D0-63CF-4E19-AC47-2E650F4E7253}.Release|x86.ActiveCfg = Release|Win32
 		{ABC422D0-63CF-4E19-AC47-2E650F4E7253}.Release|x86.Build.0 = Release|Win32
-		{87605C0E-5C07-49D9-B8CC-FD85804913F0}.Debug|x64.ActiveCfg = Debug|x64
-		{87605C0E-5C07-49D9-B8CC-FD85804913F0}.Debug|x64.Build.0 = Debug|x64
-		{87605C0E-5C07-49D9-B8CC-FD85804913F0}.Debug|x86.ActiveCfg = Debug|Win32
-		{87605C0E-5C07-49D9-B8CC-FD85804913F0}.Debug|x86.Build.0 = Debug|Win32
-		{87605C0E-5C07-49D9-B8CC-FD85804913F0}.Release|x64.ActiveCfg = Release|x64
-		{87605C0E-5C07-49D9-B8CC-FD85804913F0}.Release|x64.Build.0 = Release|x64
-		{87605C0E-5C07-49D9-B8CC-FD85804913F0}.Release|x86.ActiveCfg = Release|Win32
-		{87605C0E-5C07-49D9-B8CC-FD85804913F0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@ Panel::Panel(int width, int hight)
 {
 	this->width = width;
 	this->hight = hight;
-	borderStyle = BorderType::SingleBorder;
+	borderStyle = BorderType::DoubleLineBorder;
 }
 
 Panel::~Panel()
@@ -33,6 +33,11 @@ void Panel::addCompon(Control* toAdd, short top, short left) {
 		this->setHight((this->getHight() + toAdd->getHight() + 1));
 	if (toAdd->getWidth() > this->getWidth())
 		this->setWidth((this->getWidth() + toAdd->getWidth() + 1));
+}
+void Panel::getAllControls(vector<Control*>* controls) {
+	for (auto it = container.begin(); it != container.end(); ++it) {
+		(*it)->getAllControls(controls);
+	}
 }
 void Panel::mousePressed(const int x, const int y, const bool isLeft) {
 	if (isLeft) {

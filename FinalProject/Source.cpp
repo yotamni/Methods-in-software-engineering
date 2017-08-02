@@ -13,7 +13,7 @@ void main()
 	int i;
 	Panel form(50,20);
 	TextBox tb(20, 2, BorderType::SingleBorder);
-	Label label(20, 2);
+	Label label(9, 2);
 	label.SetText("name:");
 	TextBox tb1(20, 2, BorderType::SingleBorder);
 //	NumericBox nb(5, 0, 50);

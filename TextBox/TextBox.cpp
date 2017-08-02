@@ -27,7 +27,7 @@ void TextBox::draw(Graphics& g)
 	printBorder(g);
 	g.moveTo(left+1,top+1);
 	cout<< this->GetText();
-	g.setCursorVisibility(true);
+	//g.setCursorVisibility(true);
 }
 
 void TextBox::mousePressed(int x, int y, bool isLeft) {

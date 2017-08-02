@@ -17,7 +17,6 @@ protected:
 	bool canFocus;
 	BorderType borderStyle;
 	static Control* onFocus;
-	vector<Control*> container;
 public:
 	Control(int width) { width = width; std::cout << width; };
 	Control(short top, short left, BorderType border);
@@ -37,8 +36,7 @@ public:
 	virtual short getTop() { return top; };
 	virtual void setLeft(short);
 	virtual void setTop(short);
-	virtual vector<Control*> getAllControls() { return container; }
+	virtual void getAllControls(vector<Control*>* controls) {};
 	virtual bool canGetFocus() { return canFocus; };
 	~Control();
 };
-

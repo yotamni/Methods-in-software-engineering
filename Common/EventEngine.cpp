@@ -71,34 +71,11 @@ EventEngine::~EventEngine()
 void EventEngine::moveFocus(Control &main, Control *focused)
 {
 	vector<Control*> controls;
-	controls = main.getAllControls();
-	cout << controls.size();
-	int i=0;
-	for (int j = 0; j < controls.size(); j++)
-		if (focused = controls.at(j))
-			i = j;
-	auto it = find(controls.begin(), controls.end(), controls.at(i));
-	do {
-		i--;
-		cout << controls.at(i)->canGetFocus() << endl;
-		if (i == 0) {
-			it = controls.end();
-			i = controls.size() - 1;
-		}
-		it = find(controls.begin(), controls.end(), controls.at(i));
-	} while (!(*it)->canGetFocus());
-	/*while (i<=controls.size()){
-		cout << "loop";
-		i = i - 1;
-		if (controls.at(i) == focused) {
-			
-			cout << "sdsa";
-			auto it = find(controls.begin(), controls.end(), controls.at(i));
-			if ((*it)->canGetFocus()) {
-				Control::setFocus(**it);
-				break;
-			}
-			break;
-		}
-	}*/
+	main.getAllControls(&controls);
+	auto it = find(controls.begin(), controls.end(), focused);
+	do
+		if (++it == controls.end())
+			it = controls.begin();
+	while (!(*it)->canGetFocus());
+	Control::setFocus(**it);
 }

@@ -1,19 +1,15 @@
 #pragma once
-#include "Control.h"
-class IComponent :public Control
+#include "IComponent.h"
+class IComposite :public IComponent
 {
-	bool visibility;
-	Color background, foreground;
+protected:
+	vector<Control*> container;
 public:
-	IComponent();
-	IComponent(int width, int hight, BorderType border, int top=0, int left=0);
-	virtual ~IComponent();
-	virtual void setvisibility(bool visibility);
-	virtual void setForeground(Color color);
-	virtual void setBackgroundColor(Color color);
-	virtual void setBorder(BorderType border) ;
-	void printBorder(Graphics&);
-	int getWidth();
-	int getHight();
+	IComposite();
+	IComposite(int hight, int width, int top, int left, BorderType border);
+	virtual ~IComposite();
+	virtual void addCompon(Control* toAdd, short top, short left);
+//	virtual void addCompon(Control*);
+	void removeCompon(Control*);
+	void drawAll(Graphics&);
 };
-

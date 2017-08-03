@@ -6,24 +6,28 @@ void NumericBox::draw(Graphics& g)
 {
 	setBackgroundColor(Color::Red);
 	printBorder(g);
-	up.setTop(this->getTop() + 2);
-	up.setLeft(this->getLeft() + 2);
+	up.setTop(this->getTop()+1);
+	//up.setLeft(this->getLeft() + 2);
+	up.setLeft(this->getLeft()+1);
+	up.setBorder(BorderType::SingleBorder);
 	up.draw(g);
-	down.setTop(this->getTop() + 2);
-	down.setLeft(this->getLeft() + 5);
+	down.setTop(this->getTop()+1);
+	//down.setLeft(this->getLeft() + 5);
+	down.setLeft(this->getLeft() +4);
+	down.setBorder(BorderType::SingleBorder);
 	down.draw(g);
-	text.setTop(this->getTop() + 2);
-	text.setLeft(this->getLeft() + 7);
+	text.setTop(this->getTop()+1);
+	text.setLeft(this->getLeft() + 10);
 	text.setForeground(Color::Orange);
 	text.draw(g);
 }
-NumericBox::NumericBox(int width=20, int hight=2, int top=0, int left=0, int _min=0, int _max=100, int val=0): IComposite(hight, width, top, left, BorderType::SingleBorder), up(5,5), down(5,5), text(5,5), _min(_min), _max(_max)
+NumericBox::NumericBox(int width=20, int hight=2, int top=0, int left=0, int _min=0, int _max=100, int val=0): IComposite(hight, width, top, left, BorderType::SingleBorder), up(1,1), down(1,1), text(5,1), _min(_min), _max(_max)
 {
 	std::string stringVal = std::to_string(val);
 	up.SetText("+");
 	down.SetText("-");
-	up.setTop(top + 1);
-	down.setTop(top + 1);
+	up.setTop(top+1);
+	down.setTop(top+1);
 	up.setLeft(left + 1);
 	down.setLeft(left + 6);
 	text.setLeft(left+left+7);

@@ -66,28 +66,17 @@ void NumericBox::mousePressed(int x, int y, bool isLeft)
 {
 	MousePressed(*this, x, y, isLeft);
 }
-//
-//NumericBox::NumericBox(int _width, int _min, int _max) :IComponent(_width, 2, BorderType::DoubleLineBorder) {
-//	NumericBox::setWidth(width);
-//	NumericBox::setMin(_min);
-//	NumericBox::setMax(_max);
-//	NumericBox::setValue(0);
-//}
-//
-//void NumericBox::mousePressed(int x, int y, bool isLeft) {
-//	
-//}
-//
+
 //void NumericBox::keyDown(int keyCode, char charecter) {
-//	cout << this->getValue();
+//	//cout << this->getValue();
 //		switch (keyCode) {
 //			case VK_RIGHT: { 
-//				if (this->value < this->max)
+//				if (this->value < this->_max)
 //					this->add();
 //				break; 
 //			}
 //			case VK_LEFT: { 
-//				if (this->value > this->min)
+//				if (this->value > this->_min)
 //					this->reduce();
 //				break; 
 //			}

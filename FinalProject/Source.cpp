@@ -20,12 +20,12 @@ void main()
 	TextBox tbForAddress(20, 2, BorderType::SingleBorder);
 	Label labelAge(9, 2);
 	labelAge.SetText("Age:");
-	NumericBox nbForAge(15, 4, 0, 0, 0, 100, 0);
-	form.addCompon(&header, 1, 38);
-	form.addCompon(&labelName, 2, 1);
-	form.addCompon(&tbForName, 2, 10);
-	form.addCompon(&labelAddress, 4, 1);
-	form.addCompon(&tbForAddress, 4, 10);
+	NumericBox nbForAge(15,4,0,0,0,100,0);
+	form.addCompon(&header,1,38);
+	form.addCompon(&labelName,2,1);
+	form.addCompon(&tbForName,2,10);
+	form.addCompon(&labelAddress,4,1);
+	form.addCompon(&tbForAddress,4,10);
 	form.addCompon(&labelAge, 8, 1);
 	form.addCompon(&nbForAge, 8, 10);
 	EventEngine engine;

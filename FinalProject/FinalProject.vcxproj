@@ -145,6 +145,9 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComboBox\ComboBox.vcxproj">
+      <Project>{4820a728-cfa0-4030-9e24-597b189a26a4}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.vcxproj">
       <Project>{2d460596-459d-4e55-a35e-a392971604be}</Project>
     </ProjectReference>

@@ -6,12 +6,12 @@ void ComboBox::draw(Graphics& g)
 {
 	setBackgroundColor(Color::Blue);
 	printBorder(g);
-	showList->setTop(ComboBox::getTop() + 1);
-	showList->setLeft(ComboBox::getLeft() + 1);
+	showList->setTop(top + 1);
+	showList->setLeft(left + 5);
 	showList->draw(g);
-	chosenItem->setTop(ComboBox::getTop() + 6);
-	chosenItem->setLeft(ComboBox::getLeft() + 5);
-	listHolder->setTop(ComboBox::getTop() + 11);
+	chosenItem->setTop(top + 6);
+	chosenItem->setLeft(left + 5);
+	listHolder->setTop(top + 11);
 	listHolder->setLeft(ComboBox::getLeft() + 5);
 	chosenItem->draw(g);
 	listHolder->draw(g);

@@ -64,7 +64,7 @@ void NumericBox::MousePressed(Control & control, int x, int y, bool isLeft)
 
 void NumericBox::mousePressed(int x, int y, bool isLeft)
 {
-	
+	MousePressed(*this, x, y, isLeft);
 }
 //
 //NumericBox::NumericBox(int _width, int _min, int _max) :IComponent(_width, 2, BorderType::DoubleLineBorder) {

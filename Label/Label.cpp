@@ -13,8 +13,7 @@ void Label::draw(Graphics& g) {
 	printBorder(g);
 	g.moveTo(this->getTop() + 1, this->getLeft() + 1);
 	g.setCursorVisibility(false);
-//	g.write(left + this->getLeft(), top + this->getTop(), this->GetText());
-	g.write(this->getLeft(), this->getTop(), this->GetText());
+	g.write(this->getLeft()+1, this->getTop()+1, this->GetText());
 }
 
 string Label::GetText() {

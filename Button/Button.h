@@ -9,12 +9,14 @@ struct MouseListener
 class Button :public Label
 {
 	MouseListener* listener;
+	bool clickable;
 public:
 	Button(int, int);
 	~Button();
 	void addListener(MouseListener &listener);
-	//void draw(Graphics&);
-	//void mousePressed(const int x, const int y, const bool isLeft);
-	//void keyDown(int keyCode, char charecter);
+	void mousePressed(int x, int y, bool isLeft);
+//	void MousePressed(Control &control, const int x, const int y, const bool isLeft)
+	/*void draw(Graphics&);*/
+	void keyDown(int keyCode, char charecter);
 };
 

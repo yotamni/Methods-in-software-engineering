@@ -39,7 +39,7 @@ void Panel::getAllControls(vector<Control*>* controls) {
 		(*it)->getAllControls(controls);
 	}
 }
-void Panel::mousePressed(const int x, const int y, const bool isLeft) {
+void Panel::mousePressed(int x, int y, bool isLeft) {
 	if (isLeft) {
 		for (auto children = container.begin(); children != this->container.end(); ++children) {
 			int Y = y - (*children)->getTop();

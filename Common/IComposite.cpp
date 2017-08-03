@@ -1,5 +1,5 @@
 #include "IComposite.h"
-#include "../TextBox/TextBox.h";
+#include "../TextBox/TextBox.h"
 
 IComposite::IComposite(): IComponent(){}
 IComposite::IComposite(int hight, int width, int top, int left, BorderType border=BorderType::NoneType): IComponent(width, hight, border, top, left){}

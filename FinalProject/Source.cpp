@@ -15,7 +15,7 @@ void main()
 	Label label(20, 2);
 	label.SetText("name:");
 	TextBox tb1(20, 2, BorderType::SingleBorder);
-	NumericBox nb(20,3,0,0,0,100,7);
+	NumericBox nb(15,4,0,0,0,100,7);
 	form.addCompon(&tb1, 6, 10);
 	form.addCompon(&label, 1, 1);
 	form.addCompon(&tb, 1, 10);
